@@ -12,7 +12,14 @@ Add *respondjs_crossdomain.urls* into urls.py:
 
     url('', include('respondjs_crossdomain.urls', namespace='respondjs_crossdomain')),
 
-Include *static.html* into base template just before `</head>` tag:
+Include static template into base template. If you use *django.contrib.staticfiles* include `staticfiles.html`:
+
+    <head>
+        ....
+        {% include 'respondjs_crossdomain/staticfiles.html' %}
+    </head>
+
+or if you use built-in *static* tag include `static.html`:
 
     <head>
         ....
