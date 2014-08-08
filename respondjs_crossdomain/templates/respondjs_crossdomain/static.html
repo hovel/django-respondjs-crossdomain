@@ -1,0 +1,8 @@
+{% load staticfiles %}
+
+<!--[if lt IE 9]>
+<script src="{% static 'respondjs_crossdomain/respond.min.js' %}"></script>
+<link href="{% static 'respondjs_crossdomain/respond-proxy.html' %}" id="respond-proxy" rel="respond-proxy">
+<link href="{% url 'respondjs_crossdomain:static-img' %}" id="respond-redirect" rel="respond-redirect">
+<script src="{% url 'respondjs_crossdomain:static-js' %}"></script>
+<![endif]-->
