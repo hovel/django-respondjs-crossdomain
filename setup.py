@@ -5,7 +5,7 @@ setup(
     version='0.1',
     description='',
     long_description='',
-    url='https://github.com/lampslave/django-respondjs-crossdomain',
+    url='https://github.com/hovel/django-respondjs-crossdomain',
     author='',
     author_email='',
     license='',
